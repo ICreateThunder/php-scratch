@@ -2,9 +2,10 @@
 
 /**
  * @brief Function takes a list of objects, 
- * calls to_string method on each element
+ * calls echo_object_paragraph to echo a number
+ * of paragraphs
  * 
- * @params ...objects
+ * @param ...objects
  */
 function echo_objects_from_list($objects) {
     foreach($objects as $object) {
@@ -14,9 +15,10 @@ function echo_objects_from_list($objects) {
 
 /**
  * @brief Function takes a list of objects, 
- * calls to_string method on each element
+ * calls a function also passed on each object.
  * 
- * @params ...objects
+ * @param ...objects
+ * @param f - function to call on each object in ...objects list
  */
 function echo_objects_from_list_using_function($objects, $f) {
     foreach($objects as $object) {
@@ -29,7 +31,7 @@ function echo_objects_from_list_using_function($objects, $f) {
  * formats a string with output of object->to_string(),
  * echos the resulting string as a number of p elements
  * 
- * @params ...objects
+ * @param ...objects
  */
 function echo_object_paragraph($object) {
     echo sprintf("<p>%s</p>", $object->to_string());
@@ -40,7 +42,7 @@ function echo_object_paragraph($object) {
  * formats a string with output of object->to_string()
  * echos the resulting string as a list of li elements.
  * 
- * @params object - Object to be echoed
+ * @param object - Object to be echoed
  */
 function echo_object_items($object) {
     echo sprintf("<li>%s</li>", $object->to_string());

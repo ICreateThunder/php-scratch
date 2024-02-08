@@ -3,6 +3,7 @@
 
     require "../../utils/auth.php";
 
+    // Form post logic
     if (isset($_POST['username']) && isset($_POST['password'])) {
         $login_status = attempt_login($_POST['username'], $_POST['password']);
         echo (!$login_status) ? "Failed to login" : "Login successful";

@@ -3,7 +3,7 @@
 // Session
 session_start();
 
-// Value
+// Global constant to enable debugging logic
 define("DEBUG", TRUE);
 
 ?>

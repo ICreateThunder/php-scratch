@@ -1,9 +1,9 @@
 <?php 
 
 /**
- * @brief A simple helper function to return relevant debugging information
+ * @brief Helper function to return relevant debugging information
  * 
- * @returns - String with information about where function called from
+ * @returns String with useful debugging information such as: where called from, user agent etc...
  */
 function debug_info() {
     return (string) sprintf("

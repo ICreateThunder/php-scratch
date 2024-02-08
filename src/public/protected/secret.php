@@ -4,7 +4,7 @@
 
     require "../../utils/auth.php";
 
-    // Function to check authentication status
+    // Call function to check authn/autho status
     require_auth();
 ?>
 

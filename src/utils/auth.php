@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @brief Helper function to redirect to login page
+ */
 function login_redirect() {
     header("Location: " . "http://localhost:3000/auth/login.php");
     die();
@@ -20,6 +23,9 @@ function require_auth() {
 /**
  * @brief Function checks to see if login details are correct
  * 
+ * @param username - Username to attempt login with
+ * @param password - Password to attempt login with
+ *
  * @returns TRUE if credentials valid; false otherwise
  */
 function attempt_login($username, $password) {

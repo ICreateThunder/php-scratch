@@ -4,9 +4,9 @@
   require "../utils/utils.php";
   require "../utils/debug.php";
 
-  require_once "../models/car.php";
+  require "../models/car.php";
 
-  // Create a instantiation
+  // Create a few example instantiations
   $car_1 = new Car(NULL, NULL);
   $car_2 = new Car("Aston Martin", "DB9");
   $car_3 = new Car("Vauxhall", "Astra");
